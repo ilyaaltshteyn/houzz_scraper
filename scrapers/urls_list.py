@@ -1,0 +1,11 @@
+NYC = 'http://www.houzz.com/professionals/interior-designer/c/New-York--NY/d/100/p/{}'
+LA = 'http://www.houzz.com/professionals/interior-designer/c/Los-Angeles--CA/d/100/p/{}'
+CHI = 'http://www.houzz.com/professionals/interior-designer/c/Chicago--IL/d/100/p/{}'
+DAL = 'http://www.houzz.com/professionals/interior-designer/c/Dallas--TX/d/100/p/{}'
+WDC = 'http://www.houzz.com/professionals/interior-designer/c/Washington--DC/d/100/p/{}'
+ATL = 'http://www.houzz.com/professionals/interior-designer/c/Atlanta--GA/d/100/p/{}'
+SEA = 'http://www.houzz.com/professionals/interior-designer/c/Seattle--WA/d/100/p/{}'
+HOU = 'http://www.houzz.com/professionals/interior-designer/c/Houston--TX/d/100/p/{}'
+DEN = 'http://www.houzz.com/professionals/interior-designer/c/Denver--CO/d/100/p/{}'
+ANA = 'http://www.houzz.com/professionals/interior-designer/c/Anaheim--CA/d/100/p/{}'
+cities = [NYC, LA, CHI, DAL, WDC, ATL, SEA, HOU, DEN, ANA]
