@@ -37,13 +37,13 @@ with codecs.open('/Users/ilya/Projects/houzz_scraper/data/houzz_pages.csv',
                  'r', encoding = 'utf-8') as infile:
 
     lines = infile.readlines()
-    counter = 11787
+    counter = 16773
 
-    for line in lines[11787:]:
+    for line in lines[16773:]:
         line = line.replace('\n', '')
         l, d = get_designer_website(line)
         if l and d:
-            with codecs.open('/Users/ilya/Projects/houzz_scraper/data/designer_websites_part3.csv',
+            with codecs.open('/Users/ilya/Projects/houzz_scraper/data/designer_websites_part4.csv',
                              'a', encoding = 'utf-8') as outfile:
                 outfile.write(l + ',' + d + '\n')
 
