@@ -13,8 +13,8 @@ def get_designer_website(url):
         r = urllib2.Request(url, None, head)
         soup = BeautifulSoup(urllib2.urlopen(r).read())
     except:
-        print 'Had problem pulling page, sleeping for 30 secs. '
-        sleep(30)
+        print 'Had problem pulling page, sleeping for 3 min. '
+        sleep(180)
         return None, None
 
     link = soup.find('a', {'compid': 'Profile_Website'})
@@ -37,13 +37,13 @@ with codecs.open('/Users/ilya/Projects/houzz_scraper/data/houzz_pages.csv',
                  'r', encoding = 'utf-8') as infile:
 
     lines = infile.readlines()
-    counter = 0
+    counter = 11787
 
-    for line in lines[:3000]:
+    for line in lines[11787:]:
         line = line.replace('\n', '')
         l, d = get_designer_website(line)
         if l and d:
-            with codecs.open('/Users/ilya/Projects/houzz_scraper/data/designer_websites.csv',
+            with codecs.open('/Users/ilya/Projects/houzz_scraper/data/designer_websites_part3.csv',
                              'a', encoding = 'utf-8') as outfile:
                 outfile.write(l + ',' + d + '\n')
 
